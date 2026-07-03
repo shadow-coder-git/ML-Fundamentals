@@ -79,4 +79,9 @@ Details:
 - Non Representative data: If we have only set of data which will bias the models.
 - Irrelevent Feature: Adds overhead on storage.
 - **Overfitting**: If the model tries to touch each and every data point (like not keeping a bit of flexibility) causing the model to not predict properly.
-- 
+- **Underfitting**: If the model tries to generlize too much then it causes issues in prediction.
+
+
+#### ML Life Cycle:
+
+
