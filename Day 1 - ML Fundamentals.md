@@ -63,7 +63,7 @@ Details:
 
 2) Online Learning - In this we train only small amount of data on local server/computer and then deploy it with minimal or no training. The model learns and predicts on the fly. But it is risky if incoming data is corrupted.
 
-** Learning Rate: How frequent the model is getting updated with new data. **
+** Learning Rate: How frequent the model is getting updated with new data. 
 
 #### Types of Machine Learning Based on how the model learns
 
