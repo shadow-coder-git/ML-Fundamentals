@@ -1,4 +1,4 @@
-### ML Fundamentals:
+## ML Fundamentals:
 
 #### Types of Machine Learning based on amount of supervision needed:
 1) Supervised - Has 2 subcategories - Regression and Classification 
@@ -56,3 +56,17 @@ Details:
 
    <img width="605" height="432" alt="image" src="https://github.com/user-attachments/assets/2ba4f529-c5f1-4f96-93a5-a550c8c078d1" />
 
+
+#### Types of Machine Learning Based on Training
+
+1) Batch Learning - In this we train the model on local server/computer and then deploy it to the dedicated server. The problem is if we have a lot of data then it will challenge both hardware and software. And also it won't have the recent data points which will create latency for the user.
+
+2) Online Learning - In this we train only small amount of data on local server/computer and then deploy it with minimal or no training. The model learns and predicts on the fly. But it is risky if incoming data is corrupted.
+
+** Learning Rate: How frequent the model is getting updated with new data. **
+
+#### Types of Machine Learning Based on how the model learns
+
+1) Instance Based - We do not train the data and keep the data until the scoring query is performed. No generalization is done beforehand
+
+2) Model Based (Most Used) - We do train the model and create a generalization. we don't need data anymore post training, we create a mathmetical relation/rule and use it to predict future values.
