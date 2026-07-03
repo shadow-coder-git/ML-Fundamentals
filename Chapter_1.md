@@ -21,6 +21,9 @@ Details:
 
 
 
+
+
+
 2) Unsupervised (Clustering) - We only recieve input and based on that we need to predict the output. Clustring basically groups the nearest datapoints and creates cluster of data points.
 
    > Scenario: A global streaming platform wants to group its millions of subscribers into distinct buckets based on their viewing habits (e.g., how many sci-fi movies they watch, what time of day they log in, how long they watch). The platform doesn't have any pre-set categories or labels for these groups; they just want the algorithm to naturally find patterns and group similar viewers together so they can recommend new layout designs.
@@ -43,4 +46,13 @@ Details:
 
    <img width="752" height="440" alt="image" src="https://github.com/user-attachments/assets/b9f4cb6c-0d13-488a-a799-d8e1b1a66242" />
 
-   
+
+3) Semi-Supervised - Labeling the data is costly and timetaking, so we don't label everything but the sample of unique data points and the algorithm learns to apply it to others.
+   > Scenario: A medical research lab has collected 100,000 lung X-ray scans. Hiring expert radiologists to look at and label every single one of those 100,000 scans as either "Pneumonia" or "Healthy" is way too expensive and would take months. Instead, the lab pays a radiologist to carefully label just 1,000 of them. They want to use an algorithm that can take those 1,000 labeled scans, mix them with the 99,000 unlabeled scans, and learn how to classify future X-rays accurately.
+
+
+4) Reinforcement - Here we neither get input nor output. The algorith follows risk/reward based rule. If the model predicts correct direction it gets the reward else punishment.
+   > Scenario: A tech startup is building an autonomous drone designed to fly through thick forest canopies to map wildlife. The drone isn't given any human flight data or pre-recorded steering paths to follow. Instead, it is placed in a virtual forest simulator. Every second it flies safely without hitting a branch, it earns +5 points. If it clips a leaf, it loses -10 points. If it crashes entirely into a tree, it gets a massive penalty of -500 points and the simulation resets. Over millions of virtual flights, it figures out how to navigate tight spaces perfectly.
+
+   <img width="605" height="432" alt="image" src="https://github.com/user-attachments/assets/2ba4f529-c5f1-4f96-93a5-a550c8c078d1" />
+
