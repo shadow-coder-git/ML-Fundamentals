@@ -82,6 +82,23 @@ Details:
 - **Underfitting**: If the model tries to generlize too much then it causes issues in prediction.
 
 
-#### ML Life Cycle:
+#### How to Frame a ML Problem (Netflix Revenue Example):
 
+How to increase revenue of Netflix?
+1) Bring more customers
+2) Increase the subscription price
+3) Stop leaving customers (Reducing churn rate)
+   ** churn rate is basically how many active customer are leaving per year/month
 
+**The way of thinking**:
+- How to convert the business problem into mathametical one? For Ex: reduce churn rate from 4 to 3.75 (realistic)
+- What Type of Problem this is? Supervised/Unsupervised? these questions needs to be asked to ourselves.
+- Need to find the customers who are leaving the platform?
+- What to do once we find the customer? Maybe provide discount, what's the issue with the customer? UI or the movies which he wants to see is not available?
+- So we get to know that this is Supervised (as we have the data) and classify who are leaving so Classification Problem.
+- Now you can't give discount on the same rate to everyone. So you need to find the sentiment (how much he want to leave the platform?). Like finding a score. So now it could be Regression Problem.
+- So maybe we can use mix of Regression + Classification to provide a proper solution.
+- Now before implementing it, check if there is any existing solution which you can build upon?
+- Now have to Get clean data (no missing, not corrupted)
+- Once the Model is built need to check if the metrics which we are getting is correct with the assumption what we made ( kind of reconcilation)
+- Check your Assumption with differnt teams to avoid unnecessary effort.
